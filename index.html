@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Encriptador de Texto</h1>
-        <input type="text" id="input-texto" placeholder="Ingrese texto aquí">
-        <button id="btn-encriptar">Encriptar</button>
-        <button id="btn-desencriptar">Desencriptar</button>
-        <textarea id="msg" placeholder="Resultado"></textarea>
-        <button id="btn-copy">Copiar</button>
-    </div>
+    <div class="sup"></div>
+    <h1 class="titulo">ENCRIPTADOR DE TEXTO</h1>
+    <br><br>
+    <main class="main">
+        <section class="form box">
+            <form action="">
+                <label for="input-texto" class="lab">Solo letras minúsculas, sin acento</label>
+                <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí">
+                <input class="btn" type="button" value="Encriptar!" id="btn-encriptar">
+                <input class="btn" type="button" value="Desencriptar!" id="btn-desencriptar">
+            </form>
+        </section>
+        <section class="msg box">
+            <label for="msg" class="lab">Mensaje Encriptado</label>
+            <input class="text-input" type="text" id="msg">
+            <input class="btn" type="button" value="Copiar" id="btn-copy">
+        </section>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
